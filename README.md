@@ -13,15 +13,15 @@
 - 🐎 [大模型介绍](#大模型训练)
   - 🐎[主流大模型API调用总结](#主流大模型API调用总结)
   - 🍚[大模型本地部署](#大模型本地部署)
-  - 🐫[实战-本地部署百川13B](#实战：本地部署百川13B)
+  - 🐫[实战：本地部署百川13B](#实战：本地部署百川13B)
 - 🍄[检索增强生成（RAG）](#检索增强生成（RAG）)
   - 🌼 [ragflow](#ragflow)
   - 🐫 [LLamaIndex](#LLamaIndex)
   - 🌴 [Qanything](#QAnything)
   - 🌼 [ragflow](#ragflow)
   - 🐫 [LLamaIndex](#LLamaIndex)
-  - 🐫 [实战-自己手写一个最简单的RAG](## 手写一个最简单的RAG)
-  - 🐫 [实战：基于ragflow做了款初中历史辅导工具](# 实战：基于ragflow做一款初中历史辅导工具)
+  - 🐫 [实战：自己手写一个最简单的RAG](#手写一个最简单的RAG)
+  - 🐫 [实战：基于ragflow做了款初中历史辅导工具](#实战：基于ragflow做一款初中历史辅导工具)
 - 🎪[向量数据库技术](#向量数据库)
   - [Faiss](#Faiss)
   - [Milvus](#Milvus)
@@ -224,3 +224,13 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 ## AI语音合成
 
 ## AI音乐合成
+
+
+
+
+
+## 免责声明
+
+如有疑问请提交**issue**，有**违规侵权**，请联系本人 **[coderguo@foxmail.com](coderguo@foxmail.com)** ，本人立马删除相应链接，感谢！
+
+本仓库仅作学习交流分享使用，任何子环节不作任何商用。
