@@ -1,4 +1,3 @@
-git pull origin main
 git add .
 
 #time=`date -Iminutes`
