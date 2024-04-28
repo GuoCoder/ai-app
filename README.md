@@ -1,10 +1,16 @@
+<img src="C:\Users\LiuJing\Desktop\ai-app\assets\sologan.png" alt="sologan"  />
+
+
 <p> 
 <a href="https://github.com//llm-action/blob/main/pic/wx.jpg"> <img src="https://img.shields.io/badge/程序锅锅-1AAD19.svg?style=plastic&logo=wechat&logoColor=white" > </a>
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
 
+
+
 ## 目录
+
 - 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具) 
   - 🐫[pycharm安装](#pycharm安装)
   - 🐼[Anaconda安装及原理介绍](#Anaconda安装)
