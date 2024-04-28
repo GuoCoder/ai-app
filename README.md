@@ -18,7 +18,7 @@
   - 🌼 [ragflow](#ragflow)
   - 🌴 [QAnything](#QAnything)
   - 🐫 [LLamaIndex](#LLamaIndex)
-  - 🐫 [实战：自己手写一个最简单的RAG](#手写一个最简单的RAG)
+  - 🐫 [实战：自己手写一个最简单的RAG](#实战：手写一个最简单的RAG)
   - 🐫 [实战：基于ragflow做了款初中历史辅导工具](#实战：基于ragflow做一款初中历史辅导工具)
 - 🎪[向量数据库技术](#向量数据库)
   - [Faiss](#Faiss)
