@@ -8,21 +8,41 @@ LLM会产生误导性的 “幻觉”，依赖的信息可能过时，处理特�
 
 RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中检索相关信息，然后利用这些信息来引导生成过程，极大地提升了内容的准确性和相关性。RAG 有效地缓解了幻觉问题，提高了知识更新的速度，并增强了内容生成的可追溯性，使得大型语言模型在实际应用中变得更加实用和可信。
 
-此仓库用于学习大模型RAG的相关内容，目前为手搓实现，主要是llama-index和langchain不太好魔改。此仓库可以方便看论文的时候，实现一些小的实验。以下为本仓库的RAG整体框架图。
+此仓库用于学习大模型RAG的相关内容，目前为手搓实现，主要是llama-index和langchain不太好魔改。此仓库可以方便看论文的时候，实现一些小的实验。以下为本仓库的RAG代码目录结构。
 
-![alt text](images/Retrieval-Augmented%20Generation（RAG-Learning）.png)
+```
+├─data #存放原始数据
+├─images
+├─RAG #存放RAG核心代码
+├─storage #存放chunks embeddings后的数据
+└─tutorial
+    ├─01.如何调用大模型API
+    ├─02.RAG介绍
+    ├─03.部署环境准备
+    ├─04.知识库构建
+    ├─05.基于知识库的大模型问答
+    ├─06.改进-用自己的embedding模型
+    ├─07.封装镜像对外提供服务
+    ├─08.改进-基于Faiss的大模型知识索引构建
+    ├─09.改进-使用向量数据库
+    │  └─cloud-vectordb-examples
+    └─10.前端构建
+```
 
-以下为笔者所构思的RAG实现过程，这里面主要包括包括三个基本步骤：
 
-1. 索引 — 将文档库分割成较短的 Chunk，并通过编码器构建向量索引。
 
-2. 检索 — 根据问题和 chunks 的相似度检索相关文档片段。
+以下为所构思的RAG实现过程，这里面主要包括包括三个基本步骤：
 
-3. 生成 — 以检索到的上下文为条件，生成问题的回答。
+1. 索引 — 将文档库分割成较短的 chunks，并对chunks使用embedding模型构建知识库。
+
+2. 检索 — 根据问题与知识库中chunks 的相似度检索相关文档片段。
+
+3. 生成 — 以检索到的chunks加上问题，输入llm生成答案。
 
 <div align="center">
-    <img src="images/RAG.png" alt="RAG" width="100%">
+    <img src="../assets/rag-技术路线.png" alt="RAG" width="100%">
 </div>
+
 
 # QuickStrat
 
@@ -32,53 +52,54 @@ RAG 通过在语言模型生成答案之前，先从广泛的文档数据库中�
 pip install -r requirements.txt
 ```
 
-导入所使用的包
+
+
+构建知识库代码如下：
 
 ```python
 from RAG.VectorBase import VectorStore
 from RAG.utils import ReadFiles
-from RAG.LLM import OpenAIChat
-```
+from RAG.LLM import OpenAIChat, InternLMChat, GLM4Chat
+from RAG.Embeddings import JinaEmbedding, ZhipuEmbedding
 
-如果没有数据库那就按照如下代码：
-
-> 可以使用`VectorStore.persist()`保存到向量数据库。
-
-```python
-# 没有保存数据库
-docs = ReadFiles('./data').get_content(max_token_len=600, cover_content=150) # 获得data目录下的所有文件内容并分割
-embedding = JinaEmbedding("your model path") # 创建EmbeddingModel
+docs = ReadFiles('../../data/github_data').get_content(min_token_len=600, max_token_len=1800, cover_content=150) # 获得data目录下的所有文件内容并分割
 vector = VectorStore(docs)
+embedding = ZhipuEmbedding() # 创建Zhipu EmbeddingModel
 vector.get_vector(EmbeddingModel=embedding)
-vector.persist(path='storage') # 将向量和文档内容保存到storage目录下，下次再用就可以直接加载本地的数据库
+vector.persist(path='../../storage/github_data') # 将向量和文档内容保存到storage目录下，下次再用就可以直接加载本地的数据库
 
-question = 'git的分支原理？'
-
-content = vector.query(question, EmbeddingModel=embedding, k=1)[0]
-chat = OpenAIChat(model='gpt-3.5-turbo-1106')
-print(chat.chat(question, [], content))
 ```
 
-如果有数据库那就按照如下代码：
+
+
+基于知识库问答代码如下：
 
 ```python
+from RAG.Embeddings import ZhipuEmbedding
+from RAG.FaissVectorBase import FaissVectorStore
+from RAG.LLM import GLM4Chat
+# 保存数据库之后
+from RAG.PaddleEmbedding import PaddleEmbedding
+from RAG.VectorBase import VectorStore
+
 vector = VectorStore()
 
-vector.load_vector('./storage') # 加载本地的数据库
+vector.load_vector('../../storage/github_data') # 加载本地的数据库
 
-embedding = JinaEmbedding("your model path")
+question = 'Git中的文件有哪几种状态?'
 
-question = 'git的分支原理？'
+embedding = ZhipuEmbedding()
 
 content = vector.query(question, EmbeddingModel=embedding, k=1)[0]
 
-chat = OpenAIChat(model='gpt-3.5-turbo-1106')
+chat = GLM4Chat()
+
 print(chat.chat(question, [], content))
 ```
 
-> 如果大家的文档有中文的话，不建议使用`openai`的向量接口，可以使用智谱AI或者Jina的向量模型或接口
+```tutorial```中每一章知识库与检索方式不同，均可通过修改prepare.py（构建知识库）和test.py（基于知识库检索）达到目的。
 
-# 实现细节
+
 
 ## 向量化
 
@@ -112,7 +133,7 @@ class BaseEmbeddings:
 
 ## 向量检索
 
-这里未使用任何成熟的数据库，只是简单的使用`Json`保存了文档分割后的片段和对应的向量。大家可以在`VectorBase`中找到实现的方式。
+这里未使用任何成熟的数据库，只是简单的使用`Json`保存了文档分割后的片段和对应的向量。大家可以在`VectorBase.py`中找到实现的方式。
 
 在向量检索的时候仅使用`Numpy`进行加速，代码非常容易理解和修改。
 
@@ -124,11 +145,13 @@ def query(self, query: str, EmbeddingModel: BaseEmbeddings, k: int = 1) -> List[
     return np.array(self.document)[result.argsort()[-k:][::-1]]
 ```
 
-> 没有考虑生产环境使用，仅供学习使用
+此外，继承`VectorBase`类，扩展了`FaissVectorBase.py`支持Faiss向量数据库、`ZillizVectorStore.py`支持Milvus向量数据库。
+
+
 
 ## LLM 模型
 
-这里支持了`openai`模型和`InternLM2`模型，如果想要用其他的模型，大家可以在`LLM`中找到实现的方式。继承以下基类，然后在此基础上进行修改即可。
+这里支持了`openai`模型、`zhipu`模型和`InternLM2`模型，如果想要用其他的模型，大家可以在`LLM`中找到实现的方式。继承以下基类，然后在此基础上进行修改即可。
 
 ```python
 class BaseModel:
