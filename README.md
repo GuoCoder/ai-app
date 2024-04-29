@@ -208,7 +208,7 @@ github上的代码封装程度高，不利于小白学习入门。
 |              02.RAG介绍               | [手把手教你完成大模型RAG知识问答应用构建-02.RAG介绍](https://zhuanlan.zhihu.com/p/687216989) | [配套代码](./llm-rag/README.md) |
 |            03.部署环境准备            | [手把手教你完成大模型RAG知识问答应用构建-03.项目依赖环境准备](https://zhuanlan.zhihu.com/p/690248249) | [配套代码](./llm-rag/README.md) |
 |             04.知识库构建             | [手把手教你完成大模型RAG知识问答应用构建-04.知识库构建](https://zhuanlan.zhihu.com/p/694699663) | [配套代码](./llm-rag/README.md) |
-|       05.基于知识库的大模型问答       |                            更新中                            | [配套代码](./llm-rag/README.md) |
+|       05.基于知识库的大模型问答       | [手把手教你完成大模型RAG知识问答应用构建-05.基于知识库的大模型问答](https://zhuanlan.zhihu.com/p/695336978) | [配套代码](./llm-rag/README.md) |
 |     06.改进-用自己的embedding模型     |                            更新中                            | [配套代码](./llm-rag/README.md) |
 |        07.封装镜像对外提供服务        |                            更新中                            | [配套代码](./llm-rag/README.md) |
 | 08.改进-基于Faiss的大模型知识索引构建 |                            更新中                            | [配套代码](./llm-rag/README.md) |
