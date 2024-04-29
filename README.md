@@ -1,4 +1,4 @@
-<img src="C:\Users\LiuJing\Desktop\ai-app\assets\sologan.png" alt="sologan"  />
+<img src="./assets\sologan.png" alt="sologan"  />
 
 
 <p> 
