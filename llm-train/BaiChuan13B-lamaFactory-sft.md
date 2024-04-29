@@ -66,6 +66,8 @@ model_dir = snapshot_download('baichuan-inc/Baichuan2-13B-Chat')
 
 ### 可视化页面训练
 
+- 启动命令：
+
 ```python
 export CUDA_VISIBLE_DEVICES=0 # Windows 使用 `set CUDA_VISIBLE_DEVICES=0`
 export GRADIO_SERVER_PORT=7860 # Windows 使用 `set GRADIO_SERVER_PORT=7860`
@@ -73,9 +75,48 @@ python src/train_web.py # 或 python -m llmtuner.webui.interface
 ```
 截图如下：
 
-![可视化页面训练截图](assets/%E5%8F%AF%E8%A7%86%E5%8C%96%E9%A1%B5%E9%9D%A2%E8%AE%AD%E7%BB%83%E6%88%AA%E5%9B%BE.png)
+![可视化页面训练截图](assets/1.png)
 
+**可视化界面目前仅支持单 GPU 训练，请使用命令行接口来进行多 GPU 分布式训练**
 
+- 基于BaiChuan13B SFT 启动命令记录：
+
+```bash
+CUDA_VISIBLE_DEVICES=2 python src/train_bash.py \
+    --stage sft \
+    --do_train True \
+    --model_name_or_path ../models/baichuan-inc/Baichuan2-13B-Chat \
+    --finetuning_type lora \
+    --template baichuan \
+    --flash_attn auto \
+    --dataset_dir data \
+    --dataset oaast_sft_zh \
+    --cutoff_len 1024 \
+    --learning_rate 5e-05 \
+    --num_train_epochs 3.0 \
+    --max_samples 100000 \
+    --per_device_train_batch_size 2 \
+    --gradient_accumulation_steps 8 \
+    --lr_scheduler_type cosine \
+    --max_grad_norm 1.0 \
+    --logging_steps 5 \
+    --save_steps 100 \
+    --warmup_steps 0 \
+    --optim adamw_torch \
+    --report_to none \
+    --output_dir saves/Baichuan-13B-Chat/lora/train_2024-04-29-09-45-23 \
+    --fp16 True \
+    --lora_rank 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0 \
+    --lora_target W_pack \
+    --plot_loss True
+
+```
+
+预计消耗显存 34G，训练过程如下图
+
+![image-20240429095108593](assets/image-20240429095108593.png)
 
 ### 命令行训练
 

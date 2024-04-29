@@ -1,3 +1,4 @@
+git pull
 git add .
 
 #time=`date -Iminutes`
