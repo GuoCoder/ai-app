@@ -70,7 +70,7 @@ model_dir = snapshot_download('baichuan-inc/Baichuan2-13B-Chat')
 
 ```python
 export CUDA_VISIBLE_DEVICES=0 # Windows 使用 `set CUDA_VISIBLE_DEVICES=0`
-export GRADIO_SERVER_PORT=7860 # Windows 使用 `set GRADIO_SERVER_PORT=7860`
+export GRADIO_SERVER_PORT=10099 # Windows 使用 `set GRADIO_SERVER_PORT=7860`
 python src/train_web.py # 或 python -m llmtuner.webui.interface
 ```
 截图如下：

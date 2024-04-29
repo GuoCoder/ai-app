@@ -1,26 +1,30 @@
+<img src="C:\Users\LiuJing\Desktop\ai-app\assets\sologan.png" alt="sologan"  />
+
+
 <p> 
 <a href="https://github.com//llm-action/blob/main/pic/wx.jpg"> <img src="https://img.shields.io/badge/程序锅锅-1AAD19.svg?style=plastic&logo=wechat&logoColor=white" > </a>
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
 
+
+
 ## 目录
+
 - 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具) 
   - 🐫[pycharm安装](#pycharm安装)
   - 🐼[Anaconda安装及原理介绍](#Anaconda安装)
   - 🐰[关于ssh那些事](#关于ssh那些事)
-  - 🌋[实战-用vscode远程服务器开发](#实战-用vscode远程开发)
+  - 🌋[实战：用vscode远程服务器开发](https://zhuanlan.zhihu.com/p/693420628)
 - 🐎 [大模型介绍](#大模型训练)
   - 🐎[主流大模型API调用总结](#主流大模型API调用总结)
   - 🍚[大模型本地部署](#大模型本地部署)
   - 🐫[实战：本地部署百川13B](#实战：本地部署百川13B)
 - 🍄[检索增强生成（RAG）](#检索增强生成（RAG）)
   - 🌼 [ragflow](#ragflow)
+  - 🌴 [QAnything](#QAnything)
   - 🐫 [LLamaIndex](#LLamaIndex)
-  - 🌴 [Qanything](#QAnything)
-  - 🌼 [ragflow](#ragflow)
-  - 🐫 [LLamaIndex](#LLamaIndex)
-  - 🐫 [实战：自己手写一个最简单的RAG](#手写一个最简单的RAG)
+  - 🐫 [实战：自己手写一个最简单的RAG](#实战-手写一个最简单的RAG)
   - 🐫 [实战：基于ragflow做了款初中历史辅导工具](#实战：基于ragflow做一款初中历史辅导工具)
 - 🎪[向量数据库技术](#向量数据库)
   - [Faiss](#Faiss)
@@ -29,14 +33,14 @@
   - [实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
 - 🚅 [大模型训练](#大模型训练)
   - [预训练（PT）](#预训练)
-  - [指令微调（SFT）](#指令微调（SFT）)
-  - [基于人工反馈的强化学习（RLHF）](#基于人工反馈的强化学习（RLHF）)
+  - [指令微调（SFT）](#指令微调)
+  - [基于人工反馈的强化学习（RLHF）](#基于人工反馈的强化学习)
   - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
   - ✈️ [实战-基于LLaMA Factory微调Baichuan-13B](#实战-微调Baichuan-13B)
 - 🚀 [大模型Agent框架](#Agent)
   - 📐 [langchain](#langchain)
   - 📐 [AutoGPT](#AutoGPT)
-  - 🐫 [实战-自己手写一个最简单的Agent](#llm训练实战)
+  - 🐫 [实战-自己手写一个最简单的Agent](#自己手写一个最简单的Agent)
 - ♻️ [AI图像生成](#AI图像生成)
   - 📐 [StableDiffusion1.5](#StableDiffusion1.5)
   - 📐 [SDXL](#SDXL)
@@ -90,7 +94,21 @@ Anaconda解决了官方Python的两大痛点。
 
 ### 预训练
 
+
+
+- [OpenAI首次揭秘GPT训练细节](https://zhuanlan.zhihu.com/p/633202668)
+
 ### 指令微调
+
+
+
+- [OpenAI首次揭秘GPT训练细节](https://zhuanlan.zhihu.com/p/633202668)
+
+
+
+### 基于人工反馈的强化学习
+
+- [OpenAI首次揭秘GPT训练细节](https://zhuanlan.zhihu.com/p/633202668)
 
 
 
@@ -102,17 +120,19 @@ Anaconda解决了官方Python的两大痛点。
 
 ## 检索增强生成（RAG）
 
-1.为什么要用检索增强生成？
+- 为什么要用检索增强生成？
 
-大模型（LLM）会产生误导性的 “幻觉”，训练数据会过时，处理特定知识时效率不高，缺乏专业领域的深度洞察，同时在推理能力上也有所欠缺。
+  大模型（LLM）会产生误导性的 “幻觉”，训练数据会过时，处理特定知识时效率不高，缺乏专业领域的深度洞察，同时在推理能力上也有所欠缺。
 
-正是在这样的背景下，检索增强生成技术（Retrieval-Augmented Generation,RAG）应时而生，成为大模型时代的一大趋势。
+  正是在这样的背景下，检索增强生成技术（Retrieval-Augmented Generation,RAG）应时而生，成为大模型时代的一大趋势。
 
-2.检索增强生成是什么？
+- 检索增强生成是什么？
 
-RAG通过在语言模型生成答案之前，先从广泛的专业文档数据库中检索相关信息，然后利用这些专业信息来引导大模型生成的结果，极大地提升了内容的准确性和相关性。
+  RAG通过在语言模型生成答案之前，先从广泛的专业文档数据库中检索相关信息，然后利用这些专业信息来引导大模型生成的结果，极大地提升了内容的准确性和相关性。
 
-RAG有效地缓解了幻觉问题，提高了知识更新的速度（大模型+搜索引擎），并增强了内容生成的可追溯性，使得大型语言模型在实际应用中变得更加实用和可信。
+  RAG有效地缓解了幻觉问题，提高了知识更新的速度（大模型+搜索引擎），并增强了内容生成的可追溯性，使得大型语言模型在实际应用中变得更加实用和可信。
+
+  
 
 RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库构建、知识检索和知识问答。其中核心在于**知识库构建**
 
@@ -126,7 +146,7 @@ RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库
 
 ### ragflow
 
-常规rag存在的问题：
+- 常规rag存在的问题：
 
 **一是**如何应对复杂多变的数据，这些数据包含各种格式，更复杂的还包含各类图表、pdf、excel循环嵌套等。如果在没有理解这些数据的基础之上直接简单粗暴地做RAG ，就会导致知识检索失败，从而导致rag失败。
 
@@ -134,11 +154,11 @@ RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库
 
 
 
-ragflow是如何改善这些问题的？
+- ragflow是如何改善这些问题的？
 
-1.基于深度文档理解**deepdoc模块**，能够从各类复杂格式的非结构化数据中提取真知灼见。
+**一是**基于深度文档理解**deepdoc模块**，能够从各类复杂格式的非结构化数据中提取真知灼见。
 
-2.引入**多路召回**和**重排序**，才能保证数据检索召回的准确度
+**二是**引入**多路召回**和**重排序**，才能保证数据检索召回的准确度
 
 项目地址：[ragflow](https://github.com/infiniflow/ragflow)
 
@@ -146,25 +166,27 @@ ragflow是如何改善这些问题的？
 
 
 
+### QAnything
 
+与ragflow类似，也是解决常规rag的数据问题和检索问题。
 
-### 
+不过整体效果不如ragflow
 
+项目地址：[QAnything](https://github.com/netease-youdao/QAnything)
 
-
-### qanything
-
-
-
-
+**[⬆ 一键返回目录](#目录)**
 
 
 
 ### 实战：基于ragflow做一款初中历史辅导工具
 
+| 向量数据库                                                | 数据处理                                                     | 语义召回             | 教程                                                         | 视频地址                                     |
+| --------------------------------------------------------- | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ | -------------------------------------------- |
+| [Elasticsearch](https://github.com/elastic/elasticsearch) | [deepdoc模块](https://github.com/infiniflow/ragflow/blob/main/deepdoc/README_zh.md) | 多路召回、融合重排序 | [我用ragflow做了一款初中历史辅导助手](https://zhuanlan.zhihu.com/p/694358392) | https://www.bilibili.com/video/BV1yw4m1y7yA/ |
 
+**[⬆ 一键返回目录](#目录)**
 
-### 实战：手写一个最简单的RAG
+### 实战-手写一个最简单的RAG
 
 github上的代码封装程度高，不利于小白学习入门。
 
@@ -214,6 +236,12 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 如下为AI Agent云服务商E2B整理的目前市面上不同领域里知名的 AI Agent 项目，共计81个开源+58个闭源Agent项目
 
 ![landscape-latest](assets/landscape-latest.png)
+
+
+
+### 自己手写一个最简单的Agent
+
+论文：[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
 
 
 
