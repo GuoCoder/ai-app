@@ -281,13 +281,13 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 
 ## AI技术应用交流群
 
-<img src="C:\Users\LiuJing\Desktop\ai-app\assets\guo.jpg" alt="guo" style="zoom: 25%;" />
+<img src="assets\guo.jpg" alt="guo" style="zoom: 25%;" />
 
 图片挂掉，可加微信:Code-GUO
 
 ## 微信公众号
 
-![程序锅锅公众号](C:\Users\LiuJing\Desktop\ai-app\assets\程序锅锅公众号-1714486122128.jpg)
+![程序锅锅公众号](assets/程序锅锅公众号-1714486122128.jpg)
 
 图片挂掉，可加微信:Code-GUO
 
