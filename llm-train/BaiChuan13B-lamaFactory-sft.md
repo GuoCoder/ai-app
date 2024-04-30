@@ -2,7 +2,7 @@
 
 
 
-## 1.环境准备
+## 一、环境准备
 
 
 ```bash
@@ -14,7 +14,7 @@ pip install -e .[metrics]
 ```
 
 
-## 2.百川13B下载
+## 二、百川13B下载
 
 ```
 #模型下载
@@ -60,13 +60,49 @@ model_dir = snapshot_download('baichuan-inc/Baichuan2-13B-Chat')
 
 
 
- ## 3.训练
+ ## 三、训练
 
 
 
-### 可视化页面训练
+### 1.数据集构建
 
-- 启动命令：
+
+
+- 使用开源数据集
+
+
+
+- 构建自己的数据集
+
+  
+
+使用自定义数据集时，请更新 `data/dataset_info.json` 文件修改如下：
+
+比如我构建了一个数据集```test.json```，更新 `data/dataset_info.json` 文件
+
+```
+{
+  "test": {
+    "file_name": "test.json",
+    "file_sha1": "xxxxxxxxxxxx"
+  },
+  "alpaca_en": {
+    "file_name": "alpaca_data_en_52k.json",
+    "file_sha1": "607f94a7f581341e59685aef32f531095232cf23"
+  },
+  ...
+ }
+```
+
+
+
+
+
+
+
+### 1.可视化页面训练
+
+#### 启动命令：
 
 ```python
 export CUDA_VISIBLE_DEVICES=0 # Windows 使用 `set CUDA_VISIBLE_DEVICES=0`
@@ -77,7 +113,7 @@ python src/train_web.py # 或 python -m llmtuner.webui.interface
 
 ![可视化页面训练截图](assets/1.png)
 
-**可视化界面目前仅支持单 GPU 训练，请使用命令行接口来进行多 GPU 分布式训练**
+**NOTICE：可视化界面目前仅支持单 GPU 训练，请使用命令行接口来进行多 GPU 分布式训练**
 
 - 基于BaiChuan13B SFT 启动命令记录：
 
@@ -118,5 +154,11 @@ CUDA_VISIBLE_DEVICES=2 python src/train_bash.py \
 
 ![image-20240429095108593](assets/image-20240429095108593.png)
 
-### 命令行训练
+
+
+
+
+
+
+### 2.命令行训练
 
