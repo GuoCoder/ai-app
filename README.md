@@ -112,6 +112,24 @@ Anaconda解决了官方Python的两大痛点。
 
 
 
+
+
+### LLaMAFactory大模型训练
+
+ - LLaMAFactory能干啥？
+
+   用一种极简方式支持数百种大模型训练
+
+- 为什么要用LLaMAFactory?
+
+  比如对chatglm3微调，不再需要去chatglm3官网查看微调代码。在LLaMAFactory中，更换一个参数直接搞定。
+
+- 如何使用？
+  项目地址：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
+
+  
+
+
 ### 实战-微调Baichuan-13B
 
 更新中
