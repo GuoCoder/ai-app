@@ -6,37 +6,37 @@
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
-
+**持续更新中ing，点star不迷路** 。
 
 
 ## 目录
 
 - 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具) 
-  - 🐫[pycharm安装](#pycharm安装)
+  - 🐫[PyCharm安装](#pycharm安装)
   - 🐼[Anaconda安装及原理介绍](#Anaconda安装)
-  - 🐰[关于ssh那些事](#关于ssh那些事)
-  - 💪[实战：用vscode远程服务器开发](https://zhuanlan.zhihu.com/p/693420628)
+  - 🐰[关于SSH那些事](#关于ssh那些事)
+  - 💪[实战：用VSCode远程服务器开发](https://zhuanlan.zhihu.com/p/693420628)
 - 🐎 [大模型介绍](#大模型训练)
   - 🐎[主流大模型API调用总结](#主流大模型API调用总结)
-  - 🍚[大模型本地部署](#大模型本地部署)
-  - 💪[实战：本地部署百川13B](#实战：本地部署百川13B)
+  - 🍚[大模型本地部署技术](#大模型本地部署)
 - 🍄[检索增强生成（RAG）](#检索增强生成（RAG）)
   - 🌼 [ragflow](#ragflow)
   - 🌴 [QAnything](#QAnything)
   - 🐫 [LLamaIndex](#LLamaIndex)
+  - 🌼 [FastGPT](#FastGPT)
   - 💪 [实战：自己手写一个最简单的RAG](#实战-手写一个最简单的RAG)
   - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战：基于ragflow做一款初中历史辅导工具)
 - 🎪[向量数据库技术](#向量数据库)
-  - 🐮[Faiss](#Faiss)
-  - 🌲[Milvus](#Milvus)
-  - 🌞[Elasticsearch](#Elasticsearch)
-  - 💪[实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
+  - 🐮 [Faiss](#Faiss)
+  - 🌲 [Milvus](#Milvus)
+  - 🌞 [Elasticsearch](#Elasticsearch)
+  - 💪 [实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
 - 🚅 [大模型训练](#大模型训练)
   - ❄️[预训练（PT）](#预训练)
   - ⛄️[指令微调（SFT）](#指令微调)
   - ✈️[基于人工反馈的强化学习（RLHF）](#基于人工反馈的强化学习)
   - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
-  - 💪 [实战-基于LLaMA Factory微调Baichuan-13B](#实战-微调Baichuan-13B)
+  - 💪 [实战-基于LLaMA Factory微调数百种大模型](#实战-基于LLaMA Factory微调)
 - 🚀 [大模型Agent框架](#Agent)
   - 🏠 [langchain](#langchain)
   - 🗼 [AutoGPT](#AutoGPT)
@@ -52,8 +52,8 @@
   - 💪 [实战-克隆自己的声音](#克隆自己的声音)
 - 🎵 [AI音乐合成](#AI音乐合成)
   - 📐 [Suno](#Suno)
-- 📞 [AI数字人](#AI数字人)
-- 💬 [AI技术应用交流群](#llm学习交流群)
+- 📞 [我用AI技术做了一个虚拟女友](#我用AI技术做了一个虚拟女友)
+- 💬 [AI技术应用交流群](#AI技术应用交流群)
 - 👥 [微信公众号](#微信公众号)
 
 
@@ -130,9 +130,21 @@ Anaconda解决了官方Python的两大痛点。
   
 
 
-### 实战-微调Baichuan-13B
+### 实战-基于LLaMA Factory微调
 
-更新中
+- 只需两个脚本，单机单卡微调BaiChuan2-13B并发布服务
+
+- 只需两个脚本，单机多卡微调BaiChuan2-13B并发布服务
+
+- 只需两个脚本，多机多卡微调BaiChuan2-13B并发布服务
+
+- 只需两个脚本，使用vllm部署BaiChuan2-13B
+
+- 使用Ollama
+
+  
+
+
 
 ## 检索增强生成（RAG）
 
@@ -240,8 +252,6 @@ github上的代码封装程度高，不利于小白学习入门。
 
 ## 向量数据库
 
-## 大模型训练
-
 
 ## Agent
 Agent的构成要素包括LLM（Language Model），记忆（Memory），规划技能（Planning skills），工具使用能力（Tool use），使用这些不同的环节，完成构建AGI。
@@ -269,9 +279,17 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 
 ## AI音乐合成
 
+## AI技术应用交流群
 
+<img src="C:\Users\LiuJing\Desktop\ai-app\assets\guo.jpg" alt="guo" style="zoom: 25%;" />
 
+图片挂掉，可加微信:Code-GUO
 
+## 微信公众号
+
+![程序锅锅公众号](C:\Users\LiuJing\Desktop\ai-app\assets\程序锅锅公众号-1714486122128.jpg)
+
+图片挂掉，可加微信:Code-GUO
 
 ## 免责声明
 
