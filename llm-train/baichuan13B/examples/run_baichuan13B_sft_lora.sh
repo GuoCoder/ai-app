@@ -1,0 +1,32 @@
+#!/bin/bash
+
+CUDA_VISIBLE_DEVICES=2 python src/train_bash.py \
+    --stage sft \
+    --do_train True \
+    --model_name_or_path /workspace/test/models/baichuan-inc/Baichuan2-13B-Chat \
+    --adapter_name_or_path saves/Baichuan2-13B-Chat/lora/train_2024-04-30-13-10-46 \
+    --finetuning_type lora \
+    --template baichuan2 \
+    --flash_attn auto \
+    --dataset_dir data \
+    --dataset test \
+    --cutoff_len 1024 \
+    --learning_rate 5e-05 \
+    --num_train_epochs 10.0 \
+    --max_samples 100000 \
+    --per_device_train_batch_size 4 \
+    --gradient_accumulation_steps 8 \
+    --lr_scheduler_type cosine \
+    --max_grad_norm 1.0 \
+    --logging_steps 5 \
+    --save_steps 100 \
+    --warmup_steps 0 \
+    --optim adamw_torch \
+    --report_to none \
+    --output_dir saves/Baichuan2-13B-Chat/lora/train_2024-04-30-13-10-46 \
+    --fp16 True \
+    --lora_rank 8 \
+    --lora_alpha 16 \
+    --lora_dropout 0 \
+    --lora_target W_pack \
+    --plot_loss True

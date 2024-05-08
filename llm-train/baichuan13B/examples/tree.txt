@@ -1,0 +1,14 @@
+卷 Windows 的文件夹 PATH 列表
+卷序列号为 84C8-D560
+C:.
+│  README_zh.md
+│  run_baichuan13B_merge_lora.sh
+│  run_baichuan13B_sft_lora.sh
+│  tree.txt
+│  
+└─inference
+        api_demo.sh
+        cli_demo.sh
+        vllm_demo.sh
+        web_demo.sh
+        
