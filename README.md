@@ -132,7 +132,7 @@ Anaconda解决了官方Python的两大痛点。
 
 ### 实战-基于LLaMAFactory微调
 
-- [只需三个脚本，单机单卡微调BaiChuan2-13B并发布服务](https://zhuanlan.zhihu.com/p/696631776) 代码：[配套代码](./llm-train/baichuan13B/README.md)
+- [只需三个脚本，单机单卡微调BaiChuan2-13B并发布服务](https://zhuanlan.zhihu.com/p/696631776) 代码：[配套代码](./llm-train/baichuan13B)
 
 - 只需三个脚本，单机多卡微调BaiChuan2-13B并发布服务
 
