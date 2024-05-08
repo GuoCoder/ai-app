@@ -14,46 +14,51 @@
 - 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具) 
   - 🐫[PyCharm安装](#pycharm安装)
   - 🐼[Anaconda安装及原理介绍](#Anaconda安装)
-  - 🐰[关于SSH那些事](#关于ssh那些事)
   - 💪[实战：用VSCode远程服务器开发](https://zhuanlan.zhihu.com/p/693420628)
+  
 - 🐎 [大模型介绍](#大模型训练)
   - 🐎[主流大模型API调用总结](#主流大模型API调用总结)
   - 🍚[大模型本地部署技术](#大模型本地部署)
+  
 - 🍄[检索增强生成（RAG）](#检索增强生成（RAG）)
-  - 🌼 [ragflow](#ragflow)
-  - 🌴 [QAnything](#QAnything)
-  - 🐫 [LLamaIndex](#LLamaIndex)
-  - 🌼 [FastGPT](#FastGPT)
+  - 🗼[RAG原理介绍](#检索增强生成（RAG）)
+  - 🌼 [ragflow介绍](#ragflow)
   - 💪 [实战：自己手写一个最简单的RAG](#实战-手写一个最简单的RAG)
   - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战：基于ragflow做一款初中历史辅导工具)
+  
 - 🎪[向量数据库技术](#向量数据库)
-  - 🐮 [Faiss](#Faiss)
-  - 🌲 [Milvus](#Milvus)
-  - 🌞 [Elasticsearch](#Elasticsearch)
+  - 🐮 [向量数据库原理介绍](#向量数据库原理介绍)
   - 💪 [实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
+  
 - 🚅 [大模型训练](#大模型训练)
-  - ❄️[预训练（PT）](#预训练)
-  - ⛄️ [指令微调（SFT）](#指令微调)
-  - ✈️ [基于人工反馈的强化学习（RLHF）](#基于人工反馈的强化学习)
+  - ❄️[模型训练基础知识](#模型训练基础知识)
   - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
   - 💪[实战-基于LLaMAFactory微调数百种大模型](#实战-基于LLaMAFactory微调)
+  - 💪[实战-我用大模型做商品评价情感预测](#实战-我用大模型做商品评价情感预测)
+  
 - 🚀 [大模型Agent框架](#Agent)
-  - 🏠 [langchain](#langchain)
-  - 🗼 [AutoGPT](#AutoGPT)
+  - 🏠 [Agent原理介绍](#Agent原理介绍)
   - 💪 [实战-自己手写一个最简单的Agent](#自己手写一个最简单的Agent)
+  
 - ♻️ [AI图像生成](#AI图像生成)
   - 📐 [StableDiffusion1.5](#StableDiffusion1.5)
   - 💎 [SDXL](#SDXL)
   - 🍦 [ControlNet](#ControlNet)
   - 💪 [实战-基于easyphoto实现AI换脸](#实战-基于easyphoto实现AI换脸)
+  
 - :house_with_garden:  [AI语音合成](#AI语音合成)
   - ♻️ [VITS-fast-fine-tuning](#VITS-fast-fine-tuning)
   - 📐 [GPT-SoVITS](#GPT-SoVITS)
   - 💪 [实战-克隆自己的声音](#克隆自己的声音)
+  
 - 🎵 [AI音乐合成](#AI音乐合成)
+  
   - 📐 [Suno](#Suno)
+  
 - 📞 [我用AI技术做了一个虚拟女友](#我用AI技术做了一个虚拟女友)
+
 - 💬 [AI技术应用交流群](#AI技术应用交流群)
+
 - 👥 [微信公众号](#微信公众号)
 
 
@@ -72,26 +77,42 @@ Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了�
 
 [Anaconda安装与原理介绍](https://mp.weixin.qq.com/s?__biz=MzkwNzY3ODU5MA==&mid=2247483956&idx=1&sn=efdb4783a00cb10349f80ab2f818dbcf&chksm=c1defe6805c5fc674158167fec0cde2a6152137cfa3e0f0b836414b4314cb03ea013b75511bc&scene=126&sessionid=1714101698#rd)
 
+
+
+## 大模型介绍
+
+
+
+### 主流大模型API调用总结
+
+
+
+| 大模型厂商 | 调用文档 | 调用示例 | 依赖下载 |
+| ---------- | -------- | -------- | -------- |
+|            |          |          |          |
+|            |          |          |          |
+|            |          |          |          |
+
+
+
+### 大模型本地部署
+
+
+
+- vllm
+- ollma
+- 量化
+
+
+
 ## 大模型训练
 
-### 预训练
+### 模型训练基础知识
 
+- [一文带你了解预训练、指令微调和人类反馈强化学习](https://zhuanlan.zhihu.com/p/633202668)
 
-
-- [OpenAI首次揭秘GPT训练细节](https://zhuanlan.zhihu.com/p/633202668)
-
-### 指令微调
-
-
-
-- [OpenAI首次揭秘GPT训练细节](https://zhuanlan.zhihu.com/p/633202668)
-
-
-
-### 基于人工反馈的强化学习
-
-- [OpenAI首次揭秘GPT训练细节](https://zhuanlan.zhihu.com/p/633202668)
-
+- Lora介绍
+- 量化
 
 
 
@@ -175,18 +196,6 @@ RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库
 
 
 
-### QAnything
-
-与ragflow类似，也是解决常规rag的数据问题和检索问题。
-
-不过整体效果不如ragflow
-
-项目地址：[QAnything](https://github.com/netease-youdao/QAnything)
-
-**[⬆ 一键返回目录](#目录)**
-
-
-
 ### 实战：基于ragflow做一款初中历史辅导工具
 
 | 向量数据库                                                | 数据处理                                                     | 语义召回             | 教程                                                         | 视频地址                                     |
@@ -230,11 +239,25 @@ github上的代码封装程度高，不利于小白学习入门。
 
 
 
-
 ## 向量数据库
+
+### 向量数据库原理介绍
+
+
+
+### 实战-自己手写一个最简单的向量数据
+
+
+
 
 
 ## Agent
+
+
+### Agent原理介绍
+
+
+
 Agent的构成要素包括LLM（Language Model），记忆（Memory），规划技能（Planning skills），工具使用能力（Tool use），使用这些不同的环节，完成构建AGI。
 
 **Agent = LLM+Planning+Feedback+Tool use**
