@@ -6,7 +6,6 @@
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
-
 **持续更新中ING**
 
 
@@ -70,8 +69,6 @@ Pycharm最常用的版本有**社区版(community)**和 **专业版(professional
 ### Anaconda
 
 Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了包管理与环境管理的功能，可以很方便地解决多版本python并存、切换以及各种第三方包安装问题。
-
-详细介绍如下：
 
 [Anaconda安装与原理介绍](https://mp.weixin.qq.com/s?__biz=MzkwNzY3ODU5MA==&mid=2247483956&idx=1&sn=efdb4783a00cb10349f80ab2f818dbcf&chksm=c1defe6805c5fc674158167fec0cde2a6152137cfa3e0f0b836414b4314cb03ea013b75511bc&scene=126&sessionid=1714101698#rd)
 
@@ -280,7 +277,7 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 
 <img src="assets/程序锅锅公众号-1714486122128.jpg" alt="程序锅锅公众号" style="zoom: 67%;" />
 
-图片挂掉，可加微信:Code-GUO!
+图片挂掉，可加微信:Code-GUO
 
 ## 免责声明
 
