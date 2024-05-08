@@ -6,7 +6,7 @@
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
-**持续更新中ing，点star不迷路**
+**持续更新中点star不迷路**
 
 
 ## 目录
@@ -132,7 +132,7 @@ Anaconda解决了官方Python的两大痛点。
 
 ### 实战-基于LLaMAFactory微调
 
-- [只需三个脚本，单机单卡微调BaiChuan2-13B并发布服务](https://zhuanlan.zhihu.com/p/696631776) 代码：[配套代码](./llm-train/README.md)
+- [只需三个脚本，单机单卡微调BaiChuan2-13B并发布服务](https://zhuanlan.zhihu.com/p/696631776) 代码：[配套代码](./llm-train/baichuan13B/README.md)
 
 - 只需三个脚本，单机多卡微调BaiChuan2-13B并发布服务
 
