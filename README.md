@@ -6,7 +6,8 @@
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
-**持续更新中点star不迷路**
+
+**持续更新中**
 
 
 ## 目录
@@ -66,7 +67,7 @@ PyCharm是一种Python IDE（集成开发环境），相比标准python，它的
 
 这里可以理解为我用记事本也可以写python代码，不过用pycharm去写python代码比较方便。
 
-Pycharm最常用的版本有**社区版（community）**和 **专业版(professional)**, 其中专业版是需要收费的，相比于社区版，其增加了远程开发等功能。
+Pycharm最常用的版本有**社区版(community)**和 **专业版(professional)**, 其中专业版是需要收费的，相比于社区版，其增加了远程开发等功能。
 
 详细介绍如下：
 
