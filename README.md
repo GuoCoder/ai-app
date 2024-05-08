@@ -7,7 +7,7 @@
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
 
-**持续更新中**
+**持续更新中ING**
 
 
 ## 目录
@@ -63,13 +63,7 @@
 
 ### pycharm安装
 
-PyCharm是一种Python IDE（集成开发环境），相比标准python，它的开发效率要更高，同时引入第三方库也更加容易。
-
-这里可以理解为我用记事本也可以写python代码，不过用pycharm去写python代码比较方便。
-
 Pycharm最常用的版本有**社区版(community)**和 **专业版(professional)**, 其中专业版是需要收费的，相比于社区版，其增加了远程开发等功能。
-
-详细介绍如下：
 
 [最新版pycharm专业版（2023.3.4）环境安装以及永久使用方法](https://zhuanlan.zhihu.com/p/689191237)
 
@@ -77,19 +71,9 @@ Pycharm最常用的版本有**社区版(community)**和 **专业版(professional
 
 Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了包管理与环境管理的功能，可以很方便地解决多版本python并存、切换以及各种第三方包安装问题。
 
-Anaconda解决了官方Python的两大痛点。
-
-一是提供了包管理功能，不再需要人为管理众多的python依赖；
-
-二是提供环境管理的功能，解决了多版本Python并存、切换的问题。比如我现在有两个项目，分别用到了python2.7和python3.10，用官方python执行器，由于环境变量混乱，很容易造成不知名的BUG。
-
 详细介绍如下：
 
 [Anaconda安装与原理介绍](https://mp.weixin.qq.com/s?__biz=MzkwNzY3ODU5MA==&mid=2247483956&idx=1&sn=efdb4783a00cb10349f80ab2f818dbcf&chksm=c1defe6805c5fc674158167fec0cde2a6152137cfa3e0f0b836414b4314cb03ea013b75511bc&scene=126&sessionid=1714101698#rd)
-
-
-
-
 
 ## 大模型训练
 
@@ -128,7 +112,6 @@ Anaconda解决了官方Python的两大痛点。
 - 如何使用？
   项目地址：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
 
-  
 
 
 ### 实战-基于LLaMAFactory微调
@@ -279,6 +262,13 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 ## AI语音合成
 
 ## AI音乐合成
+
+## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=GuoCoder/ai-app&type=Date)](https://star-history.com/#GuoCoder/ai-app&Date)
+
+
+
 
 ## AI技术应用交流群
 
