@@ -6,7 +6,7 @@
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg""> </a>
 </p> 
-**持续更新中ing，点star不迷路** 。
+**持续更新中ing，点star不迷路**
 
 
 ## 目录
@@ -33,10 +33,10 @@
   - 💪 [实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
 - 🚅 [大模型训练](#大模型训练)
   - ❄️[预训练（PT）](#预训练)
-  - ⛄️[指令微调（SFT）](#指令微调)
-  - ✈️[基于人工反馈的强化学习（RLHF）](#基于人工反馈的强化学习)
+  - ⛄️ [指令微调（SFT）](#指令微调)
+  - ✈️ [基于人工反馈的强化学习（RLHF）](#基于人工反馈的强化学习)
   - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
-  - 💪 [实战-基于LLaMA Factory微调数百种大模型](#实战-基于LLaMA Factory微调)
+  - 💪[实战-基于LLaMA Factory微调数百种大模型](#实战-基于LLaMA Factory微调)
 - 🚀 [大模型Agent框架](#Agent)
   - 🏠 [langchain](#langchain)
   - 🗼 [AutoGPT](#AutoGPT)
@@ -132,13 +132,13 @@ Anaconda解决了官方Python的两大痛点。
 
 ### 实战-基于LLaMA Factory微调
 
-- 只需两个脚本，单机单卡微调BaiChuan2-13B并发布服务
+- [只需三个脚本，单机单卡微调BaiChuan2-13B并发布服务](https://zhuanlan.zhihu.com/p/696631776)
 
-- 只需两个脚本，单机多卡微调BaiChuan2-13B并发布服务
+- 只需三个脚本，单机多卡微调BaiChuan2-13B并发布服务
 
-- 只需两个脚本，多机多卡微调BaiChuan2-13B并发布服务
+- 只需三个脚本，多机多卡微调BaiChuan2-13B并发布服务
 
-- 只需两个脚本，使用vllm部署BaiChuan2-13B
+- 只需三个脚本，使用vllm部署BaiChuan2-13B
 
 - 使用Ollama
 
