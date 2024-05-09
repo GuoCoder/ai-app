@@ -84,22 +84,22 @@ Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了�
 
 ### 主流大模型API调用总结
 
+采用语言python
 
-
-| 大模型     | 厂商名称 | 调用文档 | 支持模型 | 调用示例 | 依赖下载 |
-| ---------- | -------- | -------- | -------- | -------- | -------- |
-| chatglm    | 智谱     |          | glm4、   |          |          |
-| 星火大模型 | 科大讯飞 |          |          |          |          |
-| 通义千问   | 阿里     |          |          |          |          |
-| 文心一言   | 百度     |          |          |          |          |
-| kimi       | 月之暗面 |          |          |          |          |
-| chatgpt    | OpenAI   |          |          |          |          |
+| 大模型     | 厂商名称 | API调用文档                                                  | 支持模型(闭源)                                    | 依赖下载                                    |
+| ---------- | -------- | ------------------------------------------------------------ | ------------------------------------------------- | ------------------------------------------- |
+| chatglm    | 智谱     | [链接](https://open.bigmodel.cn/dev/api#glm-4)               | GLM-4、GLM-4V、GLM-3-Turbo                        | ```pip install zhipuai```                   |
+| 星火大模型 | 科大讯飞 | [链接](https://www.xfyun.cn/doc/spark/Web.html)              | V1.5、V2.0、V3.0和V3.5四个版本                    | ```pip install --upgrade spark_ai_python``` |
+| 通义千问   | 阿里     | [链接](https://help.aliyun.com/zh/dashscope/developer-reference/model-introduction) | qwen-turbo、qwen-plus、qwen-max等                 | ```pip install dashscope```                 |
+| 文心一言   | 百度     | [链接](https://cloud.baidu.com/doc/WENXINWORKSHOP/s/xlmokikxe) | ERNIE-4.0、ERNIE-3.5、ERNIE-Lite等                | ```pip install qianfan```                   |
+| kimi       | 月之暗面 | [链接](https://platform.moonshot.cn/docs/api/chat#%E5%9F%BA%E6%9C%AC%E4%BF%A1%E6%81%AF) | moonshot-v1-8k、moonshot-v1-32k、moonshot-v1-128k | ```pip install openai```                    |
+| chatgpt    | OpenAI   | [链接](https://platform.openai.com/docs/introduction)        | gpt4、gpt3.5                                      | ```pip install openai```                    |
 
 
 
 ### 大模型本地部署
 
-
+- [国内规模最大的开源大模型Qwen1.5-110B部署实测](#Qwen110B实战)
 
 - vllm
 - ollma
