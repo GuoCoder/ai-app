@@ -99,11 +99,11 @@ Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了�
 
 ### 大模型部署推理
 
-- [千亿级开源大模型Qwen1.5-110B-Chat部署实测部署实测](#Qwen110B实战)
-
+- [千亿级开源大模型Qwen1.5-110B-Chat部署实测](https://zhuanlan.zhihu.com/p/696929885)
 - vllm
+- [为什么vllm消耗显存那么大？](#为什么vllm消耗显存那么大？)
 - ollma
-- 量化
+- 8bit量化、4bit量化技术原理介绍
 
 
 
