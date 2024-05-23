@@ -1,11 +1,3 @@
-<p><img src="./assets/sologan.png" alt="sologan" style="zoom:50%;" /></p>
-
-<p> 
-<a href="https://github.com//llm-action/blob/main/pic/wx.jpg"> <img src="https://img.shields.io/badge/程序锅锅-1AAD19.svg?style=plastic&logo=wechat&logoColor=white" > </a>
-<a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
-<a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg"> </a>
-</p> 
-
 
 ## 目录
 
@@ -65,21 +57,13 @@
 
 ### pycharm安装
 
-Pycharm最常用的版本有**社区版(community)**和 **专业版(professional)**, 其中专业版是需要收费的，相比于社区版，其增加了远程开发等功能。
-
-[最新版pycharm专业版（2023.3.4）环境安装以及永久使用方法](https://zhuanlan.zhihu.com/p/689191237)
+- [最新版pycharm专业版（2023.3.4）环境安装以及永久使用方法](https://zhuanlan.zhihu.com/p/689191237)
 
 ### Anaconda
 
-Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了包管理与环境管理的功能，可以很方便地解决多版本python并存、切换以及各种第三方包安装问题。
-
-[Anaconda安装与原理介绍](https://mp.weixin.qq.com/s?__biz=MzkwNzY3ODU5MA==&mid=2247483956&idx=1&sn=efdb4783a00cb10349f80ab2f818dbcf&chksm=c1defe6805c5fc674158167fec0cde2a6152137cfa3e0f0b836414b4314cb03ea013b75511bc&scene=126&sessionid=1714101698#rd)
-
-
+- [Anaconda安装与原理介绍](https://mp.weixin.qq.com/s?__biz=MzkwNzY3ODU5MA==&mid=2247483956&idx=1&sn=efdb4783a00cb10349f80ab2f818dbcf&chksm=c1defe6805c5fc674158167fec0cde2a6152137cfa3e0f0b836414b4314cb03ea013b75511bc&scene=126&sessionid=1714101698#rd)
 
 ## 大模型介绍
-
-
 
 ### 主流大模型API调用总结
 
