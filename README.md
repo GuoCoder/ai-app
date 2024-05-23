@@ -1,12 +1,20 @@
+<p><img src="./assets/sologan.png" alt="sologan" style="zoom:50%;" /></p>
+
+<p> 
+<a href="https://github.com//llm-action/blob/main/pic/wx.jpg"> <img src="https://img.shields.io/badge/程序锅锅-1AAD19.svg?style=plastic&logo=wechat&logoColor=white" > </a>
+<a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
+<a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg"> </a>
+</p> 
+
 
 ## 目录
 
-- 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具) 
+- 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具)
   - 🐫[PyCharm安装](#pycharm安装)
   - 🐼[Anaconda安装及原理介绍](#Anaconda安装)
   - 💪[实战：用VSCode远程服务器开发](https://zhuanlan.zhihu.com/p/693420628)
   
-- 🐎 [大模型介绍](#大模型训练)
+- 🐎 [大模型调用总结](#大模型调用)
   - 🐎[主流大模型API调用总结](#主流大模型API调用总结)
   - 🍚[大模型部署推理](#大模型部署推理)
   
@@ -63,7 +71,7 @@
 
 - [Anaconda安装与原理介绍](https://mp.weixin.qq.com/s?__biz=MzkwNzY3ODU5MA==&mid=2247483956&idx=1&sn=efdb4783a00cb10349f80ab2f818dbcf&chksm=c1defe6805c5fc674158167fec0cde2a6152137cfa3e0f0b836414b4314cb03ea013b75511bc&scene=126&sessionid=1714101698#rd)
 
-## 大模型介绍
+## 大模型调用
 
 ### 主流大模型API调用总结
 
