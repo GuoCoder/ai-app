@@ -1,13 +1,10 @@
-<img src="./assets/sologan.png" alt="sologan"  />
-
+<img src="./assets/sologan.png" alt="sologan" style="zoom:50%;" />
 
 <p> 
 <a href="https://github.com//llm-action/blob/main/pic/wx.jpg"> <img src="https://img.shields.io/badge/程序锅锅-1AAD19.svg?style=plastic&logo=wechat&logoColor=white" > </a>
 <a href="https://www.zhihu.com/people/echo-liu-32"> <img src="https://img.shields.io/badge/程序锅-0079FF.svg?style=plastic&logo=zhihu&logoColor=white"> </a>
 <a href="https://blog.csdn.net/qq_35054222"> <img src="https://img.shields.io/badge/CSDN-程序锅锅-FC5531.svg"> </a>
 </p> 
-
-
 ## 目录
 
 - 🔥 [服务器基础环境安装及常用工具](#服务器基础环境安装及常用工具) 
@@ -23,7 +20,7 @@
   - 🗼[RAG原理介绍](#检索增强生成)
   - 🌼 [ragflow介绍](#ragflow)
   - 💪 [实战：自己手写一个最简单的RAG](#实战-手写一个最简单的RAG)
-  - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战：基于ragflow做一款初中历史辅导工具)
+  - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战-基于ragflow做一款初中历史辅导工具)
   
 - 🎪[向量数据库技术](#向量数据库)
   - 🐮 [向量数据库原理介绍](#向量数据库原理介绍)
@@ -32,8 +29,8 @@
 - 🚅 [大模型训练](#大模型训练)
   - ❄️[模型训练基础知识](#模型训练基础知识)
   - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
-  - 💪[实战-基于LLaMAFactory微调数百种大模型](#实战-基于LLaMAFactory微调)
-  - 💪[实战-我用大模型做商品评价情感预测](https://www.bilibili.com/video/BV1siuietEYX/)
+  - 💪[实战-用LLaMAFactory微调数百种大模型](#实战-基于LLaMAFactory微调)
+  - 💪[实战-微调大模型实现商品评价情感预测](#实战-大模型做情感预测)
   
 - 🚀 [大模型Agent框架](#Agent)
   - 🏠 [Agent原理介绍](#Agent原理介绍)
@@ -145,20 +142,16 @@ Anaconda是Python依赖管理工具，支持Linux,Mac,Windows系统，提供了�
 
 - 只需三个脚本，使用vllm部署BaiChuan2-13B
 
+### 实战-大模型做情感预测
+
+| 项目                   | 微调方式 | 教程                                                         | 视频教程                                                | 相关依赖                        |
+| ---------------------- | -------- | ------------------------------------------------------------ | ------------------------------------------------------- | ------------------------------- |
+| 微调大模型实现情感预测 | Lora     | [我用LLaMA-Factory微调大模型来实现商品评论情感分析，准确率高达91.70%](https://zhuanlan.zhihu.com/p/699510751) | [视频链接](https://www.bilibili.com/video/BV1siuietEYX) | [配套代码](./llm-train/comment) |
+
+
+
 
 ## 检索增强生成
-
-- 为什么要用检索增强生成？
-
-  大模型（LLM）会产生误导性的 “幻觉”，训练数据会过时，处理特定知识时效率不高，缺乏专业领域的深度洞察，同时在推理能力上也有所欠缺。
-
-  正是在这样的背景下，检索增强生成技术（Retrieval-Augmented Generation,RAG）应时而生，成为大模型时代的一大趋势。
-
-- 检索增强生成是什么？
-
-  RAG通过在语言模型生成答案之前，先从广泛的专业文档数据库中检索相关信息，然后利用这些专业信息来引导大模型生成的结果，极大地提升了内容的准确性和相关性。
-
-  RAG有效地缓解了幻觉问题，提高了知识更新的速度（大模型+搜索引擎），并增强了内容生成的可追溯性，使得大型语言模型在实际应用中变得更加实用和可信。
 
 
 RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库构建、知识检索和知识问答。其中核心在于**知识库构建**
@@ -167,7 +160,7 @@ RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库
 
 详细介绍见：
 
-[RAG原理介绍](https://mp.weixin.qq.com/s/zlkYMkBgz4MuRW5dmOP73g)
+- [RAG原理介绍](https://mp.weixin.qq.com/s/zlkYMkBgz4MuRW5dmOP73g)
 
 
 
@@ -193,7 +186,7 @@ RAG整体技术路线可分为3大块8个小点见下图，其中包含知识库
 
 
 
-### 实战：基于ragflow做一款初中历史辅导工具
+### 实战-基于ragflow做一款初中历史辅导工具
 
 | 向量数据库                                                | 数据处理                                                     | 语义召回             | 教程                                                         | 视频地址                                     |
 | --------------------------------------------------------- | ------------------------------------------------------------ | -------------------- | ------------------------------------------------------------ | -------------------------------------------- |
@@ -219,15 +212,15 @@ github上的代码封装程度高，不利于小白学习入门。
 
 |                 章节                  |                             教程                             | 代码                            |
 | :-----------------------------------: | :----------------------------------------------------------: | ------------------------------- |
-|         01.如何调用大模型API          | [手把手教你完成大模型RAG知识问答应用构建-01.如何调用大模型API](https://zhuanlan.zhihu.com/p/687087842) | [配套代码](./llm-rag/README.md) |
-|              02.RAG介绍               | [手把手教你完成大模型RAG知识问答应用构建-02.RAG介绍](https://zhuanlan.zhihu.com/p/687216989) | [配套代码](./llm-rag/README.md) |
-|            03.部署环境准备            | [手把手教你完成大模型RAG知识问答应用构建-03.项目依赖环境准备](https://zhuanlan.zhihu.com/p/690248249) | [配套代码](./llm-rag/README.md) |
-|             04.知识库构建             | [手把手教你完成大模型RAG知识问答应用构建-04.知识库构建](https://zhuanlan.zhihu.com/p/694699663) | [配套代码](./llm-rag/README.md) |
-|       05.基于知识库的大模型问答       | [手把手教你完成大模型RAG知识问答应用构建-05.基于知识库的大模型问答](https://zhuanlan.zhihu.com/p/695336978) | [配套代码](./llm-rag/README.md) |
-|     06.改进-用自己的embedding模型     | [手把手教你完成大模型RAG知识问答应用构建-06.用自己的embedding模型](https://zhuanlan.zhihu.com/p/696868834) | [配套代码](./llm-rag/README.md) |
-|        07.封装镜像对外提供服务        |                            更新中                            | [配套代码](./llm-rag/README.md) |
-| 08.改进-基于Faiss的大模型知识索引构建 |                            更新中                            | [配套代码](./llm-rag/README.md) |
-|        09.改进-使用向量数据库         |                            更新中                            | [配套代码](./llm-rag/README.md) |
+|         01.如何调用大模型API          | [手把手教你完成大模型RAG知识问答应用构建-01.如何调用大模型API](https://zhuanlan.zhihu.com/p/687087842) | [配套代码](./llm-rag) |
+|              02.RAG介绍               | [手把手教你完成大模型RAG知识问答应用构建-02.RAG介绍](https://zhuanlan.zhihu.com/p/687216989) | [配套代码](./llm-rag) |
+|            03.部署环境准备            | [手把手教你完成大模型RAG知识问答应用构建-03.项目依赖环境准备](https://zhuanlan.zhihu.com/p/690248249) | [配套代码](./llm-rag) |
+|             04.知识库构建             | [手把手教你完成大模型RAG知识问答应用构建-04.知识库构建](https://zhuanlan.zhihu.com/p/694699663) | [配套代码](./llm-rag) |
+|       05.基于知识库的大模型问答       | [手把手教你完成大模型RAG知识问答应用构建-05.基于知识库的大模型问答](https://zhuanlan.zhihu.com/p/695336978) | [配套代码](./llm-rag) |
+|     06.改进-用自己的embedding模型     | [手把手教你完成大模型RAG知识问答应用构建-06.用自己的embedding模型](https://zhuanlan.zhihu.com/p/696868834) | [配套代码](./llm-rag) |
+|        07.封装镜像对外提供服务        |                            更新中                            | [配套代码](./llm-rag) |
+| 08.改进-基于Faiss的大模型知识索引构建 |                            更新中                            | [配套代码](./llm-rag) |
+|        09.改进-使用向量数据库         |                            更新中                            | [配套代码](./llm-rag) |
 |              10.前端构建              |                            更新中                            | 更新中                          |
 
 **[⬆ 一键返回目录](#目录)**
