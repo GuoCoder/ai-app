@@ -33,7 +33,7 @@
   - ❄️[模型训练基础知识](#模型训练基础知识)
   - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
   - 💪[实战-基于LLaMAFactory微调数百种大模型](#实战-基于LLaMAFactory微调)
-  - 💪[实战-我用大模型做商品评价情感预测](#实战-我用大模型做商品评价情感预测)
+  - 💪[实战-我用大模型做商品评价情感预测](https://www.bilibili.com/video/BV1siuietEYX/)
   
 - 🚀 [大模型Agent框架](#Agent)
   - 🏠 [Agent原理介绍](#Agent原理介绍)
