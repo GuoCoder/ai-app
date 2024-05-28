@@ -81,7 +81,7 @@
 - [千亿级开源大模型Qwen1.5-110B-Chat部署实测](https://zhuanlan.zhihu.com/p/696929885)
 - [目前有什么可以本地部署的大模型推荐?](https://www.zhihu.com/question/648879790/answer/3504152602)
 - [为什么vllm消耗显存那么大？](#为什么vllm消耗显存那么大？)
-- ollma
+- [大模型本地部署这么麻烦，为什么不直接调用API？](https://www.zhihu.com/question/653448544/answer/3512063454)
 - vllm
 - 8bit量化、4bit量化技术原理介绍
 
