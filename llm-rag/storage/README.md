@@ -1,3 +1,3 @@
 此目录用于存放知识库。
 
-由于github不好存数据，想要本教程实例数据的可以联系我。
+数据链接：https://pan.baidu.com/s/1zxuk7KPtp6kr_mWnM6Sikg?pwd=y0fk 提取码：y0fk

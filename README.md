@@ -16,6 +16,9 @@
 - 🐎 [大模型调用总结](#大模型调用)
   - 🐎[主流大模型API调用总结](#主流大模型API调用总结)
   - 🍚[大模型部署推理](#大模型部署推理)
+- [大模型原理介绍](#大模型原理介绍)
+  - [Transformer原理介绍](#Transformer原理介绍)
+  - [实战：从零实现llama3](#从零实现llama3)
 - 🍄[检索增强生成(RAG)](#检索增强生成)
   - 🗼[RAG原理介绍](#检索增强生成)
   - 🌼 [ragflow介绍](#ragflow)
@@ -84,6 +87,23 @@
 - [大模型本地部署这么麻烦，为什么不直接调用API？](https://www.zhihu.com/question/653448544/answer/3512063454)
 - vllm
 - 8bit量化、4bit量化技术原理介绍
+
+## 大模型原理介绍
+
+### Transformer原理介绍
+
+- 一文读懂Transformer
+- 图解Transformer中的Attention机制
+
+### 从零实现llama3
+
+- llama3整体架构图介绍
+- llama3原始权重与HuggingFace权重的区别
+- llama3归一化方法RMSNorm实现
+- llama3分组查询注意力（Grouped Query Attention，GQA）实现
+- llama3 掩码注意力机制（Masked Grouped Query Attention）实现
+- llama3前馈网络SwiGLU实现
+- llama3整体推理实现
 
 
 
