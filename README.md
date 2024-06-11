@@ -113,7 +113,7 @@
 
 - [一文带你了解预训练、指令微调和人类反馈强化学习](https://zhuanlan.zhihu.com/p/633202668)
 
-- Lora介绍
+- [初学者如何快速入门大模型微调](https://www.zhihu.com/question/638803488/answer/3521367223)
 - 量化
 
 
