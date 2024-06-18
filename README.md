@@ -92,7 +92,7 @@
 
 ### Transformer原理介绍
 
-- 一文读懂Transformer
+- [一文讲明白初学者怎么入门大语言模型（LLM）？](https://www.zhihu.com/question/644285055/answer/3455086230)
 - 图解Transformer中的Attention机制
 
 ### 从零实现llama3
