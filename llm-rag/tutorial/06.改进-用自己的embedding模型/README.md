@@ -1,0 +1,1 @@
+- 06-self-embedding.ipynb 用于体验paddlenlp中的embedding算法

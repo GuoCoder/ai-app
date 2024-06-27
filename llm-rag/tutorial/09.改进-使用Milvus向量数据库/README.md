@@ -1,0 +1,6 @@
+- `cloud-vectordb-examples` 云上milvus调用例子
+- `/RAG` 放置RAG核心代码
+- `prepare.py` 用于构建向量数据库
+- `test.py` 用于基于向量数据库问答
+- `.env` 用于配置大模型key
+- `config.ini`用于配置云milvus向量库 

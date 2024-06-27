@@ -1,0 +1,6 @@
+{
+  "type": "module",
+  "dependencies": {
+    "@zilliz/milvus2-sdk-node": "2.3.2"
+  }
+}
