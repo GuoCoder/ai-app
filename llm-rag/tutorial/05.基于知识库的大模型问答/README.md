@@ -1,0 +1,4 @@
+- 05-knowledge-prepare.ipynb 用于构建最基础的向量数据库
+- 05-knowledge-test.ipynb 用于基于最基础向量数据库智能问答
+- .env 配置大模型key
+- /RAG 放置RAG核心代码
