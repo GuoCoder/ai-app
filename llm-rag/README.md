@@ -99,8 +99,6 @@ print(chat.chat(question, [], content))
 
 ```tutorial```中每一章知识库与检索方式不同，均可通过修改prepare.py（构建知识库）和test.py（基于知识库检索）达到目的。
 
-![image-20240429233550548](C:\Users\LiuJing\Desktop\ai-app\llm-rag\assets\image-20240429233550548.png)
-
 
 
 ## 向量化
