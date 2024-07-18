@@ -57,8 +57,8 @@ jsonschema                    4.21.1
 jsonschema-specifications     2023.12.1
 kiwisolver                    1.4.5
 lark                          1.1.9
-llamafactory                  0.7.2.dev0   /home/liujing/LLaMA-Factory
-llmtuner                      0.7.1.dev0   /home/liujing/LLaMA-Factory
+llamafactory                  0.7.2.dev0   
+llmtuner                      0.7.1.dev0   
 llvmlite                      0.42.0
 markdown-it-py                3.0.0
 MarkupSafe                    2.1.5
