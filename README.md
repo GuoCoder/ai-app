@@ -29,7 +29,7 @@
   - 💪 [实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
 - 🚅 [大模型训练](#大模型训练)
   - ❄️[模型训练基础知识](#模型训练基础知识)
-  - 🚀 [大模型训练神器LLaMAFactory](#LLaMAFactory大模型训练)
+  - 🚀 [LoRA微调](#LoRA微调)
   - 💪[实战-用LLaMAFactory微调数百种大模型](#实战-基于LLaMAFactory微调)
   - 💪[实战-微调大模型实现商品评价情感预测](#实战-大模型做情感预测)
 - 🚀 [大模型Agent框架](#Agent)
@@ -114,23 +114,15 @@
 - [一文带你了解预训练、指令微调和人类反馈强化学习](https://zhuanlan.zhihu.com/p/633202668)
 
 - [初学者如何快速入门大模型微调](https://www.zhihu.com/question/638803488/answer/3521367223)
-- 量化
+- [介绍部分微调中的Prompt-Tuning](https://www.zhihu.com/question/646632163/answer/3584882298)
 
 
 
+### LoRA微调
 
-### LLaMAFactory大模型训练
-
- - LLaMAFactory能干啥？
-
-   用一种极简方式支持数百种大模型训练
-
-- 为什么要用LLaMAFactory?
-
-  比如对chatglm3微调，不再需要去chatglm3官网查看微调代码。在LLaMAFactory中，更换一个参数直接搞定。
-
-- 如何使用？
-  项目地址：[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory/blob/main/README_zh.md)
+| 项目                            | 教程 | 代码                         |
+| ------------------------------- | ---- | ---------------------------- |
+| 不依赖微调框架，从0实现LoRA微调 |      | [配套代码](./llm-train/lora) |
 
 
 
