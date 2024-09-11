@@ -93,6 +93,7 @@
 ### Transformer原理介绍
 
 - [一文讲明白初学者怎么入门大语言模型（LLM）？](https://www.zhihu.com/question/644285055/answer/3455086230)
+- [从矩阵运算角度理解反向传播](https://www.zhihu.com/question/663495727/answer/3613784579)
 - 图解Transformer中的Attention机制
 
 ### 从零实现llama3
@@ -112,11 +113,10 @@
 ### 模型训练基础知识
 
 - [一文带你了解预训练、指令微调和人类反馈强化学习](https://zhuanlan.zhihu.com/p/633202668)
-
 - [初学者如何快速入门大模型微调](https://www.zhihu.com/question/638803488/answer/3521367223)
 - [介绍部分微调中的Prompt-Tuning](https://www.zhihu.com/question/646632163/answer/3584882298)
-
-
+- [从原理到实战讲明白大模型微调方法LoRA](https://zhuanlan.zhihu.com/p/714762638)
+- 如何从零开始训练一个llm模型？
 
 ### LoRA微调
 
@@ -250,6 +250,13 @@ Agent的构成要素包括LLM（Language Model），记忆（Memory），规划�
 如下为AI Agent云服务商E2B整理的目前市面上不同领域里知名的 AI Agent 项目，共计81个开源+58个闭源Agent项目
 
 ![landscape-latest](assets/landscape-latest.png)
+
+
+
+Agent相关文章：
+
+- [什么是 AI 智能体，和大模型有什么关系？](https://www.zhihu.com/question/663495727/answer/3613784579)
+- 
 
 
 
