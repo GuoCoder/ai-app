@@ -93,7 +93,7 @@
 ### Transformer原理介绍
 
 - [一文讲明白初学者怎么入门大语言模型（LLM）？](https://www.zhihu.com/question/644285055/answer/3455086230)
-- [从矩阵运算角度理解反向传播](https://www.zhihu.com/question/663495727/answer/3613784579)
+- [从矩阵运算角度理解反向传播](https://www.zhihu.com/question/615235209/answer/3607951782)
 - 图解Transformer中的Attention机制
 
 ### 从零实现llama3
@@ -239,21 +239,6 @@ github上的代码封装程度高，不利于小白学习入门。
 
 
 ### Agent原理介绍
-
-
-
-Agent的构成要素包括LLM（Language Model），记忆（Memory），规划技能（Planning skills），工具使用能力（Tool use），使用这些不同的环节，完成构建AGI。
-
-**Agent = LLM+Planning+Feedback+Tool use**
-
-
-如下为AI Agent云服务商E2B整理的目前市面上不同领域里知名的 AI Agent 项目，共计81个开源+58个闭源Agent项目
-
-![landscape-latest](assets/landscape-latest.png)
-
-
-
-Agent相关文章：
 
 - [什么是 AI 智能体，和大模型有什么关系？](https://www.zhihu.com/question/663495727/answer/3613784579)
 - 
