@@ -19,22 +19,19 @@
 - [大模型原理介绍](#大模型原理介绍)
   - [Transformer原理介绍](#Transformer原理介绍)
   - [实战：从零实现llama3](#从零实现llama3)
-- 🍄[检索增强生成(RAG)](#检索增强生成)
-  - 🗼[RAG原理介绍](#检索增强生成)
-  - 🌼 [ragflow介绍](#ragflow)
-  - 💪 [实战：自己手写一个最简单的RAG](#实战-手写一个最简单的RAG)
-  - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战-基于ragflow做一款初中历史辅导工具)
-- 🎪[向量数据库技术](#向量数据库)
-  - 🐮 [向量数据库原理介绍](#向量数据库原理介绍)
-  - 💪 [实战-自己手写一个最简单的向量数据库](#实战-自己手写一个最简单的向量数据库)
 - 🚅 [大模型训练](#大模型训练)
   - ❄️[模型训练基础知识](#模型训练基础知识)
+  - 💪[从零训练gpt2](#从零训练gpt2)
   - 🚀 [LoRA微调](#LoRA微调)
   - 💪[实战-用LLaMAFactory微调数百种大模型](#实战-基于LLaMAFactory微调)
   - 💪[实战-微调大模型实现商品评价情感预测](#实战-大模型做情感预测)
-- 🚀 [大模型Agent框架](#Agent)
+- 🍄[检索增强生成(RAG)](#检索增强生成)
+  - 🌼 [ragflow](#ragflow)
+  - 💪 [实战：自己手写一个最简单的RAG](#实战-手写一个最简单的RAG)
+  - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战-基于ragflow做一款初中历史辅导工具)
+- 🚀 [Agent](#Agent)
   - 🏠 [Agent原理介绍](#Agent原理介绍)
-  - 💪 [实战-自己手写一个最简单的Agent](#自己手写一个最简单的Agent)
+  - 💪 [手写Qwen2大模型function call](#手写Qwen2大模型function call)
 - ♻️ [AI图像生成](#AI图像生成)
   - 📐 [StableDiffusion1.5](#StableDiffusion1.5)
   - 💎 [SDXL](#SDXL)
@@ -226,22 +223,6 @@ github上的代码封装程度高，不利于小白学习入门。
 
 **[⬆ 一键返回目录](#目录)**
 
-
-
-
-
-## 向量数据库
-
-### 向量数据库原理介绍
-
-
-
-### 实战-自己手写一个最简单的向量数据
-
-
-
-
-
 ## Agent
 
 
@@ -250,13 +231,11 @@ github上的代码封装程度高，不利于小白学习入门。
 - [什么是 AI 智能体，和大模型有什么关系？](https://www.zhihu.com/question/663495727/answer/3613784579)
 - 
 
+### 手写Qwen2大模型function call
 
-
-### 自己手写一个最简单的Agent
-
-论文：[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)
-
-
+| 项目                         | 教程                                   | 代码                                           |
+| ---------------------------- | -------------------------------------- | ---------------------------------------------- |
+| 手写Qwen2大模型function call | https://zhuanlan.zhihu.com/p/730995043 | [配套代码](./agent/qwen2_openai_function_call) |
 
 
 
