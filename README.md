@@ -31,7 +31,7 @@
   - 💪 [实战：基于ragflow做了款初中历史辅导工具](#实战-基于ragflow做一款初中历史辅导工具)
 - 🚀 [Agent](#Agent)
   - 🏠 [Agent原理介绍](#Agent原理介绍)
-  - 💪 [手写Qwen2大模型function call](#手写Qwen2大模型function call)
+  - 💪 [手写Qwen2大模型function_call](#手写Qwen2大模型function_call)
 - ♻️ [AI图像生成](#AI图像生成)
   - 📐 [StableDiffusion1.5](#StableDiffusion1.5)
   - 💎 [SDXL](#SDXL)
@@ -231,7 +231,7 @@ github上的代码封装程度高，不利于小白学习入门。
 - [什么是 AI 智能体，和大模型有什么关系？](https://www.zhihu.com/question/663495727/answer/3613784579)
 - 
 
-### 手写Qwen2大模型function call
+### 手写Qwen2大模型function_call
 
 | 项目                         | 教程                                   | 代码                                           |
 | ---------------------------- | -------------------------------------- | ---------------------------------------------- |
